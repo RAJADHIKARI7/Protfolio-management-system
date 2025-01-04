@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Adhikari Khatri - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .profile-container {
+            max-width: 180px;
+            margin: 0 auto;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            padding: 2.5rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            margin-bottom: 1.5rem;
+            color: #1e3a8a;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+
+        .project-links {
+            margin-top: 1rem;
+        }
+
+        .project-links a {
+            color: #3b82f6;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .skill-tag {
+            background: #e0e7ff;
+            color: #1e3a8a;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+
+        .experience-item h3 {
+            color: #1e3a8a;
+        }
+
+        .experience-item .date {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .download-cv {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+
+        .download-cv:hover {
+            background: #1e3a8a;
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-item {
+            padding: 1rem;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="C:\Users\Raj\OneDrive\Desktop\pms\profile\viber_image_2023-09-06_13-37-57-228.jpg" alt="Raj Adhikari Khatri" class="profile-img" id="profileImage">
+        </div>
+        <h1>Raj Adhikari Khatri</h1>
+        <p>Creative Computer Engineer | Developer | Digital Marketer</p>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Creative Computer Engineer with a passion for transforming complex technical challenges into elegant, user-friendly solutions. Experienced in development and digital marketing, combining technical expertise with marketing insights.</p>
+            <div class="skills">
+                <span class="skill-tag">Computer Engineering</span>
+                <span class="skill-tag">Frontend Development</span>
+                <span class="skill-tag">Digital Marketing</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">C Programming</span>
+            </div>
+            <a href="#" class="download-cv" id="downloadCV">Download CV</a>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Breast Cancer Detection</h3>
+                    <p>A machine learning project developed as a university minor project, focused on efficient cancer detection.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/RAJADHIKARI7/breast_cancer_detection" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Solar System Simulation</h3>
+                    <p>A simple yet effective simulation of the solar system implemented in C programming.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/RAJADHIKARI7/solarsystem.c" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Developer and Digital Marketer</h3>
+                <p>Bichitras Group pvt. ltd. | Kathmandu</p>
+                <p class="date">January, 2024 - Present</p>
+            </div>
+            <div class="experience-item">
+                <h3>Digital Manager (Ass. Manager)</h3>
+                <p>Miraj Communication Pvt. ltd. | Kathmandu</p>
+                <p class="date">April, 2019 - November, 2023</p>
+            </div>
+            <div class="experience-item">
+                <h3>Tution Lecturer</h3>
+                <p>Ambition tution center | Kathmandu</p>
+                <p class="date">April, 2022 - March, 2023</p>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="experience-item">
+                <h3>Bachelor of Computer Engineering</h3>
+                <p>Advanced college of Engineering and management | Kathmandu</p>
+                <p class="date">April, 2020 - Present</p>
+            </div>
+            <div class="experience-item">
+                <h3>+2 (Science)</h3>
+                <p>Capital college and Research Center | Kathmandu</p>
+                <p class="date">April, 2018 - March, 2020</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Location</h3>
+                    <p>Pepsicola, Kathmandu, Nepal</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Contact Details</h3>
+                    <p>Phone: +977 9808674986</p>
+                    <p>Email: raj.077bct064@acem.edu.np</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Social Links</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/raj-adhikari-khatri-6533b931b/" target="_blank">LinkedIn</a>
+                        <a href="https://www.facebook.com/razz.adhikari.12/" target="_blank">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Handle profile image upload
+        document.getElementById('profileImage').addEventListener('click', function() {
+            const input = document.createElement('input');
+            input.type = 'file';
+            input.accept = 'image/*';
+            input.onchange = function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        document.getElementById('profileImage').src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            };
+            input.click();
+        });
+
+        // Handle CV download
+        document.getElementById('downloadCV').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Add your CV file path here
+            
+            alert('"C:\Users\Raj\OneDrive\Desktop\pms\assets\raj-khatri-cv.pdf"');
+            <a href="C:\Users\Raj\OneDrive\Desktop\pms\assets\raj-khatri-cv.pdf" class="download-cv" id="downloadCV" download>Download CV</a>
+        });
+    </script>
+</body>
+</html>
